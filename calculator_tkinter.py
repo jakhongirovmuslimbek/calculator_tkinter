@@ -50,7 +50,7 @@ def button_multiply():
 	saved_number = int(user_number)
 	input1.delete(0, END)	
 
-def button_tenglik():
+def button_equal():
 	summa = input1.get()
 	input1.delete(0, END)
 	if symbol == 'add':
@@ -79,7 +79,7 @@ button_add = 		Button(root, text='+', padx=40, pady=20, font=font_value, bg='gra
 button_subtract = 	Button(root, text='-', padx=41, pady=20, font=font_value, bg='gray11', fg='DarkOrange1', borderwidth=3, command=button_subtract)
 button_divide = 	Button(root, text='/', padx=40, pady=20, font=font_value, bg='gray11', fg='DarkOrange1', borderwidth=3, command=button_divide)
 button_multiply = 	Button(root, text='*', padx=40, pady=20, font=font_value, bg='gray11', fg='DarkOrange1', borderwidth=3,	command=button_multiply)
-button_equal = 		Button(root, text='=', padx=91, pady=20, font=font_value, bg='Orange', fg='white',       borderwidth=3, command=button_tenglik)
+button_equal = 		Button(root, text='=', padx=91, pady=20, font=font_value, bg='Orange', fg='white',       borderwidth=3, command=button_equal)
 button_clear = 		Button(root, text='Clear', padx=80, pady=20, font=font_value, bg='Orange', fg='white', 	 borderwidth=3, command=button_clear)
 
 button_1.grid(row=3, column=0)
